@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ieducate Online Learning</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar background h-nav" id="home">
+        <div class="items">
+            <img src="image/laptoplogo.jpg" alt="laptop" class="logo visibility" id="logob">
+            <ul class="visibility ul1" id="ul2">
+                <li class="item" id="item1"><a href="#home" id="active">Home</a></li>
+                <li class="item" id="item2"><a href="https://www.google.com/" target="blank">About</a></li>
+                <li class="item" id="item3"><a href="#services">Services</a></li>
+                <li class="item" id="item4"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" name="search" id="search" class="rightnav visibility" placeholder="search your query">
+            <button class="btn rightnav visibility" id="btnstart">Getting Started</button> 
+            <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a> 
+        </div>  
+    </nav>
+    <section class="firsthalf background">
+        <div class="leftside">
+            <h2>
+                The Future of India is here
+            </h2>
+            <p class="parahead">
+                Education is the process of facilitating learning, or the acquisition of knowledge, skills, values,
+                beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and
+                directed research. Education frequently takes place under the guidance of educators, however learners
+                can also educate themselves. Education can take place in formal or informal settings and any experience
+                that has a formative effect on the way one thinks, feels, or acts may be considered educational.
+            </p>
+            <button class="btn btnsection" id="btn1">Suscribe</button>
+            <button class="btn btnsection" id="btn2">Watch Video</button>
+        </div>
+        <div class="rightside">
+            <img src="image/laptoplogo.jpg" alt="Apna Logo" id="headimage">
+        </div>
+    </section>
+    <section class="section2" id="services">
+        <div class="service">
+            Our Services
+        </div>
+        <div class="secpara1 sec1">
+            <p class="para1">Education began in prehistory, as adults trained the young in the knowledge and skills
+                deemed necessary in their society. In pre-literate societies, this was achieved orally and through
+                imitation. Story-telling passed knowledge, values, and skills from one generation to the next. As
+                cultures began to extend their knowledge beyond skills that could be readily learned through imitation,
+                formal education developed. Schools existed in Egypt at the time of the Middle Kingdom.[2]
+                Matteo Ricci (left) and Xu Guangqi (right) in the Chinese edition of Euclid's Elements published in 1607
+                Plato founded the Academy in Athens, the first institution of higher learning in Europe.[3] The city of
+                Alexandria in Egypt, established in 330 BCE, became the successor to Athens as the intellectual cradle
+                of Ancient Greece. </p>
+            <img src="image/education1 (1).jpg" alt="nothing" class="img1">
+        </div>
+        <div class="secpara2 sec1">
+            <p class="para1">The Aztecs also had a well-developed theory about education, which has an equivalent word
+                in Nahuatl called tlacahuapahualiztli. It means "the art of raising or educating a person",[6] or "the
+                art of strengthening or bringing up men".[7] This was a broad conceptualization of education, which
+                prescribed that it begins at home, supported by formal schooling, and reinforced by community living.
+                Historians cite that formal education was mandatory for everyone regardless of social class and
+                gender.[8] There was also the word neixtlamachiliztli, which is "the act of giving wisdom to the
+                face."[7] </p>
+            <img src="image/education1 (2).jpg" alt="nothing" class="img1">
+        </div>
+        <div class="secpara3 sec1">
+            <p class="para1">The European Age of Empires saw European ideas of education in philosophy, religion, arts
+                and sciences spread out across the globe. Missionaries and scholars also brought back new ideas from
+                other civilizations – as with the Jesuit China missions who played a significant role in the
+                transmission of knowledge, science, and culture between China and Europe, translating works from Europe
+                like Euclid's Elements for Chinese scholars and the thoughts of Confucius for European audiences. The
+                Enlightenment saw the emergence of a more secular educational outlook in Europe.</p>
+            <img src="image/education1 (3).jpg" alt="nothing" class="img1">
+        </div>
+    </section>
+    <section class="contacts" id="contact">
+        <h3>Contact Us</h3>
+        <div class="form">
+            <input type="text" class="name part" placeholder="Enter your Name">
+        </div>
+        <div class="form">
+            <input type="email" class="email part" placeholder="Enter your Email">
+        </div>
+        <div class="form">
+            <input type="number" class="number part" placeholder="Enter your number">
+        </div>
+        <div class="form">
+            <textarea name="textarea" id="textarea"  rows="10" placeholder="Write about Yourself"></textarea>
+        </div>
+        <div class="form">
+            <button id="submit">Submit</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="foot">
+            &copy;All Rights Reserved&nbsp;&nbsp;www.Ieducate.com
+        </div>
+    </footer>
+    <script>
+        function slideshow(){
+            var x= document.getElementsByClassName('visibility');
+            var h=document.getElementById("home");
+            if(h.style.height===""){
+                h.style.height="300px";
+                
+                for(var i=0;i<x.length;i++){
+                    x[i].style.display='block';
+                }  
+            }else{
+                h.style.height="";
+                for(var i=0;i<x.length;i++){
+                    x[i].style.display="none";
+                }
+            }
+    
+            
+        }
+        
+        // burger.addEventlistner('click',()=>{
+
+
+        // })
+        
+     
+    </script>
+
+
+</body>
+
+</html>
